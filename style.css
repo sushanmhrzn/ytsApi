@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400;1,500&family=Poppins:wght@100&family=Raleway:wght@100&family=Sono:wght@200;300;400;500&display=swap');
+body{
+    width: 100%;
+    font-family: 'Lora', serif;
+    background-image: url('cinema.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+*{
+    box-sizing: border-box;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+.nav-bar{
+    padding-left: 650px;
+    padding-top: 10px;
+    background-color: lightgreen;
+    height:50px;
+}
+.main-box{
+    max-width: 1500px;
+    height: auto;
+    background-color: #eff2f1;
+    margin: 60px ;
+    padding:10px;
+    opacity: 0.7;
+    border-radius: 30px;
+    list-style-type: none;
+}
+.main-box div{
+    height: 300px;
+    width: 300px;
+    background-color: black;
+    margin: 20px;
+    display: inline-block;
+}
