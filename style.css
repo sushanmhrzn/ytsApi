@@ -9,7 +9,7 @@ body{
     background-attachment: fixed;
 }
 *{
-    box-sizing: border-box;
+
     font-size: 18px;
     margin: 0;
     padding: 0;
@@ -24,17 +24,106 @@ body{
 .main-box{
     max-width: 1500px;
     height: auto;
-    background-color: #eff2f1;
+    background-color: rgba(255,255,255,0.4);
     margin: 60px ;
     padding:10px;
-    opacity: 0.7;
+    position:relative;
     border-radius: 30px;
-    list-style-type: none;
+    
 }
-.main-box div{
+.detail-box{
+    max-width: 1500px;
+    height: auto;
+    background-color: rgba(255,255,255,0.4);
+    margin: 60px ;
+    padding:10px;
+    border-radius: 30px;
+    position: relative;
+    
+}
+.detail-box .heading{
+    text-align: center;
+}
+.detail-box .title{
+    /* text-align: center; */
+    font-weight: 1000;
+    margin: 10px;
+    position: absolute'
+}
+.detail-box img{
+    height: 250px;
+
+}
+.main-box  .heading{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 1000;
+}
+.main-box  .content{
+    /* opacity: 1; */
     height: 300px;
     width: 300px;
     background-color: black;
+    box-shadow: rgba(71, 71, 112, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     margin: 20px;
-    display: inline-block;
+    display:inline-block;
+    border-radius: 10px;
+    vertical-align: top;
+    /* overflow: hidden; */
+
+}
+.btn{
+    margin-top:50% ;
+    margin-left:35% ;
+    opacity: 1;
+    border-radius:10px ;
+    background-color: grey;
+    height: 30px;
+    width: 90px;
+    opacity: 0;
+}
+/* .btn{
+    
+    cursor: pointer;
+    opacity: 1;
+    position: absolute;
+} */
+/* .main-box .content img{
+    height: 300px;
+    width: 300px;
+} */
+.main-box  .content:hover{
+    /* opacity: 1; */
+    transform: scale(1.1) translateY(10px);
+    opacity: 0.9;
+
+}
+.main-box  .content:hover .title{
+    /* opacity: 1; */
+    opacity: 1;
+    /* filter: blur(0px); */
+
+}
+.main-box  .content:hover .btn{
+    /* opacity: 1; */
+    opacity: 1;
+    /* filter: blur(2px); */
+
+}
+.main-box.hide{
+    display: none;
+}
+.detail-box.hide{
+    display: none;
+}
+.main-box .content .title{
+    opacity: 0;
+    font-size: 20px;
+    font-weight: 1000;
+    bottom: 30px;
+    color: white;
+    display: block;
 }
